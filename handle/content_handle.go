@@ -14,11 +14,12 @@ func getUrls(url string, size int) []string{
 	urls := make([]string, 0)
 	urlTpl := strings.Replace(url, "A1.aspx", "A%d.aspx", 1)
 
-	for i:=1; i<size; i++{
+	for i:=1; i<=size; i++{
 		urls = append(urls, fmt.Sprintf(urlTpl, i))
-		fmt.Println(fmt.Sprintf(urlTpl, i))
+		//fmt.Println(urls)
+		//fmt.Println(fmt.Sprintf(urlTpl, i))
 	}
-
+	//fmt.Printf("len: %d, cap: %d\n", len(urls), cap(urls))
 	return urls
 }
 

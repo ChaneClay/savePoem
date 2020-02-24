@@ -54,21 +54,37 @@ func (h *PoemHomeHandle) Worker(body io.Reader, url string) {
 
 	doc.Find(".sonspic").Find(".cont").Find("p").Find("a").Each(func(i int, s *goquery.Selection) {
 		link, _ := s.Attr("href")
-		fmt.Println("作品主页：", baseUrl+link)
+		realUrl := baseUrl+link
+		fmt.Println("作品主页：", realUrl)
 
 
 		h := PoemInfoHandle{}
 		fish := gofish.NewGoFish()
-		request, err := gofish.NewRequest("GET", baseUrl+link, gofish.UserAgent, &h, nil)
 
-		if err != nil{
-			fmt.Println(err)
-			return
+		realUrlAll := make([]string, 0)
+		maxPage := 10
+		realUrlAll = getUrls(realUrl, maxPage)
+
+		//request, err := gofish.NewRequest("GET", realUrl, gofish.UserAgent, &h, nil)
+		//if err != nil{
+		//	fmt.Println(err)
+		//	return
+		//}
+		//fish.Request = request
+		//fish.Visit()
+
+		//fmt.Printf("%d 页 %s \n", i+1,  realUrlAll[i])
+		for i:= 0; i<maxPage; i++{
+			request, err := gofish.NewRequest("GET", realUrlAll[i], gofish.UserAgent, &h, nil)
+
+			if err != nil{
+				fmt.Println(err)
+				return
+			}
+			fish.Request = request
+			fish.Visit()
+			fmt.Printf("%d 页 %s \n", i+1,  realUrlAll[i])
 		}
-		fish.Request = request
-		fish.Visit()
-
-
 	})
 }
 

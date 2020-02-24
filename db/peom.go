@@ -2,6 +2,7 @@ package db
 
 import (
 	"encoding/json"
+	"fmt"
 )
 
 type Poem struct {
@@ -27,6 +28,10 @@ func (p *Poem) Insert() bool{
 
 func (p *Poem) Save(){
 	json.Marshal(p)
-	p.Insert()
+	res := p.Insert()
+	if !res {
+		fmt.Println("插入失败。。。")
+	}
+
 	//fmt.Println(string(data))
 }
