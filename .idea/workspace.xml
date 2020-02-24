@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00ff0886-212b-4be8-beed-68b75bf9bfde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/peom.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/peom.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/content_handle.go" beforeDir="false" afterPath="$PROJECT_DIR$/handle/content_handle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/handle_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/handle/handle_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/poem_handle.go" beforeDir="false" afterPath="$PROJECT_DIR$/handle/poem_handle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/premiere.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/test_write.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/xlsx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/handle/xlsx_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
-  <component name="RunManager" selected="Go Test.TestXlsx in PoemGet/handle">
+  <component name="RunManager" selected="Go Build.go build PoemGet">
     <configuration name="go build PoemGet" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="PoemGet" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -59,15 +56,6 @@
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/db/peom.go" />
-      <package value="PoemGet" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build premiere.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="PoemGet" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/premiere.go" />
       <package value="PoemGet" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -94,13 +82,24 @@
       <pattern value="^TestXlsx$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestXlsx2 in PoemGet/handle" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="PoemGet" />
+      <working_directory value="$PROJECT_DIR$/handle" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="PoemGet/handle" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestXlsx2$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestXlsx in PoemGet/handle" />
         <item itemvalue="Go Build.go build PoemGet" />
+        <item itemvalue="Go Test.TestXlsx2 in PoemGet/handle" />
+        <item itemvalue="Go Test.TestXlsx in PoemGet/handle" />
         <item itemvalue="Go Build.go build peom.go" />
         <item itemvalue="Go Test.TestHandle in PoemGet/handle (1)" />
-        <item itemvalue="Go Build.go build premiere.go" />
       </list>
     </recent_temporary>
   </component>
@@ -128,21 +127,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="626" y="14" key="#go_build_premiere.go/0.0.1536.824@0.0.1536.824" timestamp="1582470624763" />
-    <state width="1493" height="240" key="GridCell.Tab.0.bottom" timestamp="1582544760770">
+    <state width="1493" height="275" key="GridCell.Tab.0.bottom" timestamp="1582548122374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="240" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582544760770" />
-    <state width="1493" height="240" key="GridCell.Tab.0.center" timestamp="1582544760769">
+    <state width="1493" height="275" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582548122374" />
+    <state width="1493" height="275" key="GridCell.Tab.0.center" timestamp="1582548122374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="240" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582544760769" />
-    <state width="1493" height="240" key="GridCell.Tab.0.left" timestamp="1582544760769">
+    <state width="1493" height="275" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582548122374" />
+    <state width="1493" height="275" key="GridCell.Tab.0.left" timestamp="1582548122374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="240" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582544760769" />
-    <state width="1493" height="240" key="GridCell.Tab.0.right" timestamp="1582544760770">
+    <state width="1493" height="275" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582548122374" />
+    <state width="1493" height="275" key="GridCell.Tab.0.right" timestamp="1582548122374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="240" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582544760770" />
+    <state width="1493" height="275" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582548122374" />
   </component>
 </project>
